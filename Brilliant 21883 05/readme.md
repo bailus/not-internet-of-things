@@ -19,9 +19,9 @@ The case is held together with plastic clips. Use a small flathead screwdriver o
 ![Inside the case](pcb-assembly.jpg)
 
 ## Step 2: Removing the top PCB
-The plug is constructed with two PCBs, connected together with header pins. The top PCB should lift up easily. The top PCB contains the WBLC9 module, which is what we want to flash.
+The plug is constructed with two PCBs, connected together with header pins. The top PCB should lift up easily. The top PCB contains the CB2S module, which is what we want to flash.
 
-![WBLC9 Module attached to the top PCB](top-pcb.jpg)
+![CB2S Module attached to the top PCB](top-pcb.jpg)
 
 ## Step 3: Soldering
 [CB2S Module Datasheet](https://images.tuyacn.com/goat/pdf/01J6RAWQ5Y6P4FFAV9PNVDQB6N/CB2S%20Module%20Datasheet_Tuya%20Developer%20Platform_Tuya%20Developer%20Platform.pdf)
@@ -30,21 +30,21 @@ The plug is constructed with two PCBs, connected together with header pins. The 
 ![CB2S Bottom](cb2s-bottom.png)
 
 Solder wires to the following pins:
-* RX1
-* TX1
-* GND
-* 3V3
-* CEN
-
-![Wires](wires.jpg)
+* RX1 (UART1_RX, serial port RX)
+* TX1 (UART1_TX, serial port TX)
+* GND (Ground)
+* 3V3 (3.3V power supply)
+* CEN (Reset pin, connect to GND to reset the module)
 
 ## Step 4: Serial connection
 Connect TX1 to the RX pin of your USB-to-serial adapter, RX1 to TX, GND to GND, and 3V3 to VCC. Make sure your USB-to-serial adapter is set to 3.3V logic level.
 
 Leave the CEN pin unconnected.
 
+![Soldered wires connected to the serial adapter](serial.jpg)
+
 ## Step 5: Programming
-The WBLC9 module uses a BK7231N chip. This isn't supported by ESP firmware like Tasmota, ESPHome, or WLED, but [OpenBK](https://github.com/openshwprojects/OpenBK7231T_App) firmware is available for it. You can use the [BK7231GUIFlashTool](https://github.com/openshwprojects/BK7231GUIFlashTool) to download OpenBK and flash the module.
+The CB2S module uses a BK7231N chip. This isn't supported by ESP firmware like Tasmota, ESPHome, or WLED, but [OpenBK](https://github.com/openshwprojects/OpenBK7231T_App) firmware is available for it. You can use the [BK7231GUIFlashTool](https://github.com/openshwprojects/BK7231GUIFlashTool) to download OpenBK and flash the module.
 
 Select the chip type BK7231N, then click ''Download latest from web'' to download the latest OpenBK firmware.
 
@@ -68,6 +68,7 @@ From the Config page, set the pin settings:
 * Pin 26: Btn 2
 
 ![Pin settings](pin-settings.png)
+
 ![Pin settings](pin-settings-2.png)
 
 ## Step 8: Control

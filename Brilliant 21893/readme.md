@@ -45,8 +45,8 @@ Tips:
 ![5](5.jpg)
 
 From top to bottom, the pins are:
-* U1_RXD (UART1_RX, User serial port RX)
-* U1_TXD (UART1_TX, User serial port TX)
+* U1_RXD (UART1_RX, serial port RX)
+* U1_TXD (UART1_TX, serial port TX)
 * CEN (Reset pin, connect to GND to reset the module)
 
 ### GND, VCC
