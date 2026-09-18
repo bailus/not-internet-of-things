@@ -17,7 +17,7 @@ Uses a Beken BK7231T chip. [Community info](https://www.elektroda.com/news/news3
 ## Step 1: Opening
 ![1](1.jpg)
 
-Insert a knife or similar tool into the seam of the case. Spraying isopropyl alcohol into the seam can help loosen the glue. Carefully work your way around the case until it pops open.
+The case is held together with glue. Insert a knife or similar tool into the seam of the case. Spraying isopropyl alcohol into the seam can help loosen the glue. Carefully work your way around the case until it pops open.
 
 ## Step 2: Removing the top PCB
 ![2](2.jpg)

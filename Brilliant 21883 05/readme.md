@@ -1,6 +1,6 @@
-# Brilliant 21883/05 Double Wall Plug Flashing Guide
+# Brilliant 21883/05 Double Wall Plug OpenBK Flashing Guide
 
-Brilliant Smart WiFi Double Wall Plug with USB-C & USB-A Port. Model 21883/05. 240V/10A max.
+Brilliant Smart WiFi Double Wall Plug with USB-C & USB-A Port. Model 21883/05. 240V, 10A max.
 
 Product links: [Manufacturer](https://brilliantlighting.com.au/en-nz/products/brilliant-white-cannes-smart-wifi-double-plug-with-usb-a-and-usb-c-chargers), [PBTech](https://www.pbtech.co.nz/product/SURBRS21883/Brilliant-Smart-WiFi-Double-Wall-Plug-with-USB-C)
 
@@ -37,7 +37,7 @@ Solder wires to the following pins:
 * CEN (Reset pin, connect to GND to reset the module)
 
 ## Step 4: Serial connection
-Connect TX1 to the RX pin of your USB-to-serial adapter, RX1 to TX, GND to GND, and 3V3 to VCC. Make sure your USB-to-serial adapter is set to 3.3V logic level.
+Connect TX1 to the RX pin of your USB-to-serial adapter, RX1 to TX, GND to GND, and 3V3 to VCC. Make sure the adapter is set to 3.3V logic level.
 
 Leave the CEN pin unconnected.
 
