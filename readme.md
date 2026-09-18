@@ -9,6 +9,7 @@ My guides for flashing some of the popular cheap devices available in New Zealan
 
 ### Light bulbs
 * [Brilliant 21893](Brilliant%2021893/readme.md): Brilliant Lighting Model 21893, E14 (Australia / New Zealand). CCT+RGB, 4.3W 220V-240V.
+* [Kogan KAE27RGBC1A](Kogan%20KAE27RGBC1A/readme.md): Kogan RGB+CCT Smart WiFi Light Bulb. Model KAE27RGBC1A. E27, 240V, 10W.
 
 ### Plugs
 * [Brilliant 21883/05](Brilliant%2021883%2005/readme.md): Brilliant Smart WiFi Double Wall Plug with USB-C & USB-A Port, 240V.
